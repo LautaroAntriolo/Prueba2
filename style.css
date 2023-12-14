@@ -1,0 +1,84 @@
+
+:root{
+    --color-primary:#287be7;
+    --color-secondary: #52a4f7;
+    --color-dark:#333;
+    --color-white: #fff;
+}
+
+
+/* llamamos a partir de su etiqueta */
+body{
+    background: linear-gradient(to bottom,var(--color-primary), var(--color-secondary));
+    color: var(--color-dark);
+    background-repeat: no-repeat;
+    background-size : cover;
+    /* propiedades de box-sizing */
+    margin: 0;
+    padding:0;
+    height:100vh; /*Alto! */
+    overflow-y: hidden;
+}
+
+h1, h2{
+    margin:0px;
+    padding:0px;
+}
+
+/* Llaamos a partir de id */
+#credencial{
+    background-color: var(--color-white);
+    width:300px;
+    margin: 100px auto; /*margin: arriba-abajo izquierda-derecha*/
+    border-radius:10px;
+    border:1px solid black;
+    padding:20px;
+    box-shadow: 0 4px 8px #0000006f;
+    text-align: center;
+}
+
+#credencial img{
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-top:-75px;
+    border: 5px solid var(--color-white);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.296);
+}
+#credencial img:hover{
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.224);
+}
+
+
+#credencial h1{
+    color: var(--color-primary);
+    font-family:'Poppins','Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top:10px;
+}
+
+#credencial h2{
+    font-weight: 300px;
+    font-size:20px;
+    margin-top:10px;
+    font-family:'Poppins','Times New Roman', Times, serif;
+}
+
+#credencial #perfil{
+    width: 150px;
+    margin-top:20px;
+    border: 5px solid var(--color-white);
+}
+
+a{
+    color: var(--color-dark);
+    text-decoration: none;
+    font-family: 'Poppins','Times New Roman';
+    font-weight: 400;
+}
+
+a:hover{
+    color: var(--color-primary);
+}
+
